@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-260 -260 520 520">
+  <defs>
+    <style>
+      @keyframes cw  { to { transform: rotate(360deg);  } }
+      @keyframes ccw { to { transform: rotate(-360deg); } }
+      @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 0.82; } }
+      .r-cw  { transform-box: fill-box; transform-origin: center; animation: cw   8s linear infinite; }
+      .r-ccw { transform-box: fill-box; transform-origin: center; animation: ccw  5.5s linear infinite; }
+      .r-slow{ transform-box: fill-box; transform-origin: center; animation: cw  14s linear infinite; }
+      .glow  { animation: pulse 3.5s ease-in-out infinite; }
+    </style>
+
+    <radialGradient id="p-bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#7dfcff" stop-opacity="0.5"/>
+      <stop offset="35%"  stop-color="#3a8bff" stop-opacity="0.35"/>
+      <stop offset="68%"  stop-color="#c146ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ff39b9" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="p-core" cx="42%" cy="38%" r="65%">
+      <stop offset="0%"   stop-color="#b0ffff" stop-opacity="0.96"/>
+      <stop offset="28%"  stop-color="#4de0ff" stop-opacity="0.95"/>
+      <stop offset="52%"  stop-color="#3c62ff" stop-opacity="0.9"/>
+      <stop offset="76%"  stop-color="#8d2dff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#11091e" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer glow -->
+  <circle r="245" fill="url(#p-bloom)" class="glow"/>
+  <circle r="195" fill="url(#p-bloom)" opacity="0.55" class="glow"/>
+
+  <!-- Static thin guide rings -->
+  <circle r="222" fill="none" stroke="#a14eff" stroke-opacity="0.38" stroke-width="2"/>
+  <circle r="212" fill="none" stroke="#59f4ff" stroke-opacity="0.28" stroke-width="1.5"/>
+
+  <!-- Arc ring 1 — CW, cyan -->
+  <g class="r-cw">
+    <circle r="200" fill="none" stroke="#47e6ff" stroke-width="15" stroke-linecap="round"
+      stroke-dasharray="160 60 40 90 100 50 65 130 50 80" stroke-opacity="0.78"/>
+  </g>
+
+  <!-- Arc ring 2 — CCW, violet -->
+  <g class="r-ccw">
+    <circle r="170" fill="none" stroke="#a64dff" stroke-width="11" stroke-linecap="round"
+      stroke-dasharray="80 40 28 65 140 60 40 110 50 75" stroke-opacity="0.88"/>
+  </g>
+
+  <!-- Arc ring 3 — CW slow, acid green -->
+  <g class="r-slow">
+    <circle r="145" fill="none" stroke="#9ffb4c" stroke-width="6" stroke-linecap="round"
+      stroke-dasharray="20 18 75 28 40 28 55 20 18 42 62 26" stroke-opacity="0.55"/>
+  </g>
+
+  <!-- Portal core -->
+  <circle r="110" fill="url(#p-core)"/>
+  <ellipse rx="82" ry="58" fill="url(#p-core)" opacity="0.84"/>
+  <ellipse rx="50" ry="34" fill="#6cf8ff" fill-opacity="0.18"/>
+  <circle r="16" fill="#091124"/>
+
+  <!-- Spark dots -->
+  <circle cx="-198" cy="-18"  r="2.8" fill="#9dff4a" opacity="0.8"/>
+  <circle cx="-168" cy="-84"  r="2.5" fill="#ff65c5" opacity="0.75"/>
+  <circle cx="-64"  cy="-194" r="2.5" fill="#c8ff37" opacity="0.7"/>
+  <circle cx="5"    cy="-214" r="2.6" fill="#ff5ebf" opacity="0.75"/>
+  <circle cx="70"   cy="-190" r="2.1" fill="#53f5ff" opacity="0.7"/>
+  <circle cx="130"  cy="-146" r="2.8" fill="#8fff63" opacity="0.75"/>
+  <circle cx="206"  cy="-30"  r="2.2" fill="#67f7ff" opacity="0.7"/>
+  <circle cx="170"  cy="96"   r="2.3" fill="#ff53bc" opacity="0.7"/>
+  <circle cx="-8"   cy="210"  r="2.4" fill="#ff6fcb" opacity="0.72"/>
+  <circle cx="-130" cy="138"  r="2.5" fill="#c9ff42" opacity="0.7"/>
+</svg>

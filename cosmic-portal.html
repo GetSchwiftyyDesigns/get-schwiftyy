@@ -1,0 +1,379 @@
+<!doctype html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Interdimensional Portal Key Art</title> <style> :root { --bg-0: #070314; --bg-1: #120826; --bg-2: #04142e; --violet: #8f4bff; --midnight: #0f1a4d; --electric: #2f7bff; --cyan: #3df2ff; --neon: #79ff55; --pink: #ff4fbf; --magenta: #d335ff; --acid: #c9ff37; }
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #05020f;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.screen {
+  mix-blend-mode: screen;
+}
+
+.soft {
+  opacity: 0.58;
+}
+
+.portal-core {
+  filter: url(#coreGlow);
+}
+
+.portal-rim {
+  filter: url(#rimGlow);
+}
+
+.nebula-blur {
+  filter: url(#nebulaBlur);
+}
+
+.twinkle {
+  animation: twinkle 4.6s ease-in-out infinite;
+}
+
+.slow-pulse {
+  animation: pulse 5.8s ease-in-out infinite;
+}
+
+.foreground-veil {
+  filter: url(#foregroundSoft);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.95; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.62; }
+  50% { opacity: 0.98; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .twinkle, .slow-pulse {
+    animation: none !important;
+  }
+}
+</style> </head> <body> <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="Stylized cosmic portal illustration"> <defs> <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#0d0620" /> <stop offset="30%" stop-color="#1a0e36" /> <stop offset="65%" stop-color="#071733" /> <stop offset="100%" stop-color="#03060f" /> </linearGradient>
+  <radialGradient id="nebulaViolet" cx="45%" cy="45%" r="60%">
+    <stop offset="0%" stop-color="#bc4dff" stop-opacity="0.95" />
+    <stop offset="45%" stop-color="#8a2fff" stop-opacity="0.45" />
+    <stop offset="100%" stop-color="#8a2fff" stop-opacity="0" />
+  </radialGradient>
+
+  <radialGradient id="nebulaPink" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="#ff3cae" stop-opacity="0.92" />
+    <stop offset="48%" stop-color="#d52ef5" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#d52ef5" stop-opacity="0" />
+  </radialGradient>
+
+  <radialGradient id="nebulaBlue" cx="50%" cy="50%" r="62%">
+    <stop offset="0%" stop-color="#3db8ff" stop-opacity="0.86" />
+    <stop offset="50%" stop-color="#2067ff" stop-opacity="0.34" />
+    <stop offset="100%" stop-color="#2067ff" stop-opacity="0" />
+  </radialGradient>
+
+  <radialGradient id="portalBloom" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7dfcff" stop-opacity="0.6" />
+    <stop offset="30%" stop-color="#3a8bff" stop-opacity="0.45" />
+    <stop offset="68%" stop-color="#c146ff" stop-opacity="0.32" />
+    <stop offset="100%" stop-color="#ff39b9" stop-opacity="0" />
+  </radialGradient>
+
+  <radialGradient id="portalInner" cx="42%" cy="38%" r="65%">
+    <stop offset="0%" stop-color="#b0ffff" stop-opacity="0.96" />
+    <stop offset="28%" stop-color="#4de0ff" stop-opacity="0.95" />
+    <stop offset="52%" stop-color="#3c62ff" stop-opacity="0.9" />
+    <stop offset="76%" stop-color="#8d2dff" stop-opacity="0.92" />
+    <stop offset="100%" stop-color="#11091e" stop-opacity="1" />
+  </radialGradient>
+
+  <linearGradient id="ringA" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7dff8b" />
+    <stop offset="35%" stop-color="#47e6ff" />
+    <stop offset="70%" stop-color="#a64dff" />
+    <stop offset="100%" stop-color="#ff48b7" />
+  </linearGradient>
+
+  <linearGradient id="ringB" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#e3ff3b" />
+    <stop offset="30%" stop-color="#43f6ff" />
+    <stop offset="65%" stop-color="#4d7eff" />
+    <stop offset="100%" stop-color="#f545d9" />
+  </linearGradient>
+
+  <linearGradient id="energyStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#cfff38" />
+    <stop offset="40%" stop-color="#4efff7" />
+    <stop offset="75%" stop-color="#9f5bff" />
+    <stop offset="100%" stop-color="#ff62c1" />
+  </linearGradient>
+
+  <linearGradient id="trailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#5df7ff" stop-opacity="0" />
+    <stop offset="45%" stop-color="#5df7ff" stop-opacity="0.85" />
+    <stop offset="100%" stop-color="#a654ff" stop-opacity="0" />
+  </linearGradient>
+
+  <radialGradient id="planetA" cx="35%" cy="35%" r="70%">
+    <stop offset="0%" stop-color="#88eaff" />
+    <stop offset="55%" stop-color="#3571ff" />
+    <stop offset="100%" stop-color="#1f1d72" />
+  </radialGradient>
+
+  <radialGradient id="planetB" cx="40%" cy="30%" r="70%">
+    <stop offset="0%" stop-color="#ff8fdf" />
+    <stop offset="45%" stop-color="#ff4db6" />
+    <stop offset="100%" stop-color="#63259f" />
+  </radialGradient>
+
+  <radialGradient id="planetC" cx="40%" cy="35%" r="70%">
+    <stop offset="0%" stop-color="#9dfeb4" />
+    <stop offset="45%" stop-color="#40e67b" />
+    <stop offset="100%" stop-color="#1c8251" />
+  </radialGradient>
+
+  <radialGradient id="planetD" cx="35%" cy="30%" r="70%">
+    <stop offset="0%" stop-color="#d0a6ff" />
+    <stop offset="50%" stop-color="#8649ff" />
+    <stop offset="100%" stop-color="#311868" />
+  </radialGradient>
+
+  <filter id="nebulaBlur" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="48" />
+  </filter>
+
+  <filter id="rimGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="6" result="blur" />
+    <feMerge>
+      <feMergeNode in="blur" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+
+  <filter id="coreGlow" x="-70%" y="-70%" width="240%" height="240%">
+    <feGaussianBlur stdDeviation="12" result="g1" />
+    <feGaussianBlur stdDeviation="25" result="g2" />
+    <feMerge>
+      <feMergeNode in="g2" />
+      <feMergeNode in="g1" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+
+  <filter id="sparkGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="2.6" result="g" />
+    <feMerge>
+      <feMergeNode in="g" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+
+  <filter id="foregroundSoft" x="-20%" y="-20%" width="140%" height="160%">
+    <feGaussianBlur stdDeviation="8" />
+  </filter>
+
+  <clipPath id="planetABands">
+    <circle cx="250" cy="180" r="84" />
+  </clipPath>
+
+  <clipPath id="planetBMarks">
+    <circle cx="1340" cy="190" r="68" />
+  </clipPath>
+
+  <clipPath id="planetDStripes">
+    <circle cx="1265" cy="565" r="92" />
+  </clipPath>
+</defs>
+
+<g id="background">
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bgGrad)" />
+</g>
+
+<g id="nebula" class="nebula-blur">
+  <ellipse cx="280" cy="220" rx="320" ry="190" fill="url(#nebulaViolet)" opacity="0.68" />
+  <ellipse cx="1220" cy="180" rx="310" ry="200" fill="url(#nebulaPink)" opacity="0.58" />
+  <ellipse cx="980" cy="580" rx="420" ry="240" fill="url(#nebulaBlue)" opacity="0.5" />
+  <ellipse cx="540" cy="700" rx="280" ry="180" fill="url(#nebulaPink)" opacity="0.35" />
+  <ellipse cx="1380" cy="690" rx="260" ry="170" fill="url(#nebulaViolet)" opacity="0.34" />
+</g>
+
+<g id="stars"></g>
+
+<g id="distant-planets">
+  <g id="planetAWrap">
+    <circle cx="250" cy="180" r="84" fill="url(#planetA)" filter="url(#rimGlow)" />
+    <g clip-path="url(#planetABands)">
+      <path d="M155 158 C210 128, 292 146, 340 172" stroke="#8ffffa" stroke-opacity="0.45" stroke-width="10" fill="none" />
+      <path d="M152 196 C222 168, 280 176, 345 212" stroke="#d94eff" stroke-opacity="0.35" stroke-width="11" fill="none" />
+      <path d="M165 224 C228 205, 292 210, 338 236" stroke="#6dff6b" stroke-opacity="0.3" stroke-width="8" fill="none" />
+    </g>
+    <circle cx="250" cy="180" r="92" fill="none" stroke="#7fdcff" stroke-opacity="0.35" stroke-width="2" />
+  </g>
+
+  <g id="planetBWrap">
+    <circle cx="1340" cy="190" r="68" fill="url(#planetB)" filter="url(#rimGlow)" />
+    <g clip-path="url(#planetBMarks)">
+      <circle cx="1314" cy="180" r="11" fill="#ff9ce9" fill-opacity="0.46" />
+      <circle cx="1366" cy="168" r="8" fill="#ffa0e8" fill-opacity="0.42" />
+      <circle cx="1348" cy="210" r="14" fill="#ffa8ef" fill-opacity="0.33" />
+      <path d="M1282 207 C1310 193, 1363 195, 1398 214" stroke="#ffcbf2" stroke-opacity="0.25" stroke-width="6" fill="none" />
+    </g>
+    <circle cx="1340" cy="190" r="76" fill="none" stroke="#ff6bd1" stroke-opacity="0.35" stroke-width="2.5" />
+  </g>
+
+  <g id="planetSmallWrap">
+    <circle cx="900" cy="130" r="36" fill="url(#planetC)" filter="url(#rimGlow)" />
+    <ellipse cx="900" cy="130" rx="54" ry="12" fill="none" stroke="#86ff8c" stroke-opacity="0.38" stroke-width="3" transform="rotate(-12 900 130)" />
+  </g>
+</g>
+
+<g id="mid-planets">
+  <g id="planetCWrap">
+    <circle cx="305" cy="680" r="122" fill="url(#planetD)" filter="url(#rimGlow)" />
+    <ellipse cx="305" cy="680" rx="186" ry="36" fill="none" stroke="#8bf4ff" stroke-opacity="0.62" stroke-width="7" transform="rotate(-12 305 680)" />
+    <ellipse cx="305" cy="680" rx="170" ry="28" fill="none" stroke="#ff4fc2" stroke-opacity="0.34" stroke-width="5" transform="rotate(-12 305 680)" />
+    <circle cx="305" cy="680" r="130" fill="none" stroke="#af78ff" stroke-opacity="0.3" stroke-width="3" />
+  </g>
+
+  <g id="planetDWrap">
+    <circle cx="1265" cy="565" r="92" fill="url(#planetC)" filter="url(#rimGlow)" />
+    <g clip-path="url(#planetDStripes)">
+      <path d="M1165 520 C1230 498, 1320 514, 1368 545" stroke="#d8ff58" stroke-opacity="0.35" stroke-width="10" fill="none" />
+      <path d="M1160 560 C1238 541, 1310 549, 1370 586" stroke="#4affec" stroke-opacity="0.32" stroke-width="11" fill="none" />
+      <path d="M1165 600 C1230 585, 1320 592, 1372 622" stroke="#7f8dff" stroke-opacity="0.28" stroke-width="9" fill="none" />
+    </g>
+    <circle cx="1265" cy="565" r="100" fill="none" stroke="#71ff84" stroke-opacity="0.32" stroke-width="2.8" />
+  </g>
+</g>
+
+<g id="secondary-portals" class="portal-rim">
+  <g id="secPortal1">
+    <circle cx="480" cy="390" r="96" fill="url(#portalBloom)" opacity="0.48" />
+    <circle cx="480" cy="390" r="76" fill="none" stroke="url(#ringA)" stroke-width="7" stroke-opacity="0.9" />
+    <circle cx="480" cy="390" r="58" fill="none" stroke="url(#ringB)" stroke-width="5" stroke-dasharray="22 14 40 19 10 12" />
+    <circle cx="480" cy="390" r="38" fill="url(#portalInner)" opacity="0.85" />
+  </g>
+  <g id="secPortal2">
+    <circle cx="1140" cy="332" r="76" fill="url(#portalBloom)" opacity="0.4" />
+    <circle cx="1140" cy="332" r="60" fill="none" stroke="url(#ringA)" stroke-width="6" />
+    <circle cx="1140" cy="332" r="45" fill="none" stroke="url(#ringB)" stroke-width="4.5" stroke-dasharray="18 12 25 20 11 10" />
+    <circle cx="1140" cy="332" r="28" fill="url(#portalInner)" opacity="0.9" />
+  </g>
+  <g id="secPortal3">
+    <circle cx="1065" cy="706" r="60" fill="url(#portalBloom)" opacity="0.36" />
+    <circle cx="1065" cy="706" r="48" fill="none" stroke="url(#ringA)" stroke-width="5" />
+    <circle cx="1065" cy="706" r="36" fill="none" stroke="url(#ringB)" stroke-width="4" stroke-dasharray="14 10 21 11 16 12" />
+    <circle cx="1065" cy="706" r="22" fill="url(#portalInner)" opacity="0.85" />
+  </g>
+</g>
+
+<g id="energy-trails" class="screen">
+  <path d="M180 470 C430 360, 620 420, 835 486 C1010 540, 1210 518, 1470 390" fill="none" stroke="url(#trailGrad)" stroke-width="4" stroke-linecap="round" opacity="0.72" />
+  <path d="M120 600 C350 530, 560 600, 795 655 C1040 712, 1235 650, 1490 540" fill="none" stroke="url(#trailGrad)" stroke-width="3.5" stroke-linecap="round" opacity="0.55" />
+  <path d="M260 250 C500 300, 710 260, 875 220 C1070 171, 1280 220, 1510 296" fill="none" stroke="url(#trailGrad)" stroke-width="2.8" stroke-linecap="round" opacity="0.5" />
+  <path d="M560 95 C690 170, 770 260, 845 360" fill="none" stroke="url(#energyStroke)" stroke-width="2.4" opacity="0.42" />
+  <path d="M985 90 C925 178, 880 255, 858 350" fill="none" stroke="url(#energyStroke)" stroke-width="2.1" opacity="0.38" />
+</g>
+
+<g id="main-portal" transform="translate(820 470)">
+  <g id="mainGlow" class="portal-core slow-pulse">
+    <circle r="286" fill="url(#portalBloom)" opacity="0.58" />
+    <circle r="232" fill="url(#portalBloom)" opacity="0.42" />
+  </g>
+
+  <g id="mainOuterHalo" class="portal-rim">
+    <circle r="226" fill="none" stroke="url(#ringA)" stroke-width="5" stroke-opacity="0.78" />
+    <circle r="214" fill="none" stroke="#a14eff" stroke-opacity="0.42" stroke-width="2" />
+    <circle r="204" fill="none" stroke="#59f4ff" stroke-opacity="0.33" stroke-width="1.5" />
+  </g>
+
+  <g id="arcSetA" class="portal-rim">
+    <circle r="198" fill="none" stroke="url(#ringB)" stroke-width="17" stroke-linecap="round"
+      stroke-dasharray="180 65 42 97 114 56 70 140 55 90" />
+  </g>
+
+  <g id="arcSetB" class="portal-rim">
+    <circle r="168" fill="none" stroke="url(#ringA)" stroke-width="12" stroke-linecap="round"
+      stroke-dasharray="90 45 30 70 150 65 45 120 55 80" opacity="0.95" />
+  </g>
+
+  <g id="arcSetC" class="portal-rim">
+    <circle r="142" fill="none" stroke="#9ffb4c" stroke-opacity="0.65" stroke-width="7" stroke-linecap="round"
+      stroke-dasharray="22 21 80 32 45 30 60 22 20 45 68 28" />
+  </g>
+
+  <g id="portalRipples" class="screen">
+    <path d="M-200 -24 C-130 -72, -44 -80, 20 -68 C112 -52, 174 0, 195 36" fill="none" stroke="#6df8ff" stroke-opacity="0.35" stroke-width="2.4" />
+    <path d="M-180 55 C-110 14, -34 8, 28 18 C100 31, 160 72, 184 104" fill="none" stroke="#ff5dc7" stroke-opacity="0.35" stroke-width="2.2" />
+    <path d="M-140 -126 C-64 -140, 18 -132, 86 -92" fill="none" stroke="#c3ff5a" stroke-opacity="0.29" stroke-width="2" />
+  </g>
+
+  <g id="vortexBandsA" class="portal-rim">
+    <path d="M-90 -120 C-28 -128, 36 -104, 84 -62 C110 -42, 118 -13, 100 16 C74 58, 22 79, -21 84 C-78 90, -125 53, -133 5 C-140 -42, -117 -84, -90 -120 Z"
+      fill="none" stroke="url(#energyStroke)" stroke-width="4.4" stroke-opacity="0.84" />
+    <path d="M-75 -92 C-30 -98, 20 -81, 53 -52 C74 -33, 80 -7, 69 18 C52 52, 14 66, -19 69 C-60 72, -95 44, -101 10 C-105 -22, -92 -62, -75 -92 Z"
+      fill="none" stroke="#55f6ff" stroke-opacity="0.78" stroke-width="3.2" />
+    <path d="M-52 -67 C-23 -72, 8 -62, 30 -42 C43 -29, 47 -9, 40 10 C30 31, 7 40, -14 42 C-38 45, -59 29, -62 8 C-65 -10, -57 -44, -52 -67 Z"
+      fill="none" stroke="#ff5ec8" stroke-opacity="0.72" stroke-width="2.7" />
+  </g>
+
+  <g id="vortexBandsB" class="portal-rim">
+    <path d="M115 -40 C100 -77, 55 -111, 9 -119 C-64 -132, -140 -95, -176 -28 C-197 10, -198 58, -163 93"
+      fill="none" stroke="#8fff66" stroke-opacity="0.52" stroke-width="3.1" />
+    <path d="M132 12 C122 -24, 87 -56, 45 -72 C-8 -92, -65 -85, -110 -47 C-148 -14, -153 36, -121 68"
+      fill="none" stroke="#66f6ff" stroke-opacity="0.52" stroke-width="2.7" />
+    <path d="M95 54 C80 38, 55 26, 29 22 C-11 16, -48 25, -72 49 C-90 67, -90 93, -72 111"
+      fill="none" stroke="#d85cff" stroke-opacity="0.48" stroke-width="2.4" />
+  </g>
+
+  <g id="portalCore">
+    <circle r="112" fill="url(#portalInner)" />
+    <ellipse rx="84" ry="60" fill="url(#portalInner)" opacity="0.84" />
+    <ellipse rx="52" ry="35" fill="#6cf8ff" fill-opacity="0.22" />
+    <circle r="18" fill="#091124" />
+  </g>
+
+  <g id="rimSparks" filter="url(#sparkGlow)">
+    <circle cx="-206" cy="-18" r="3" fill="#9dff4a" />
+    <circle cx="-192" cy="51" r="2.5" fill="#4df2ff" />
+    <circle cx="-176" cy="-87" r="2.7" fill="#ff65c5" />
+    <circle cx="-128" cy="-152" r="2.4" fill="#55f0ff" />
+    <circle cx="-72" cy="-200" r="2.7" fill="#c8ff37" />
+    <circle cx="5" cy="-221" r="2.8" fill="#ff5ebf" />
+    <circle cx="73" cy="-198" r="2.2" fill="#53f5ff" />
+    <circle cx="134" cy="-152" r="3" fill="#8fff63" />
+    <circle cx="180" cy="-96" r="2.6" fill="#ff67cd" />
+    <circle cx="214" cy="-32" r="2.4" fill="#67f7ff" />
+    <circle cx="207" cy="48" r="2.3" fill="#d2ff49" />
+    <circle cx="178" cy="102" r="2.5" fill="#ff53bc" />
+    <circle cx="123" cy="154" r="2.8" fill="#59f1ff" />
+    <circle cx="58" cy="201" r="2.2" fill="#8bff6b" />
+    <circle cx="-9" cy="219" r="2.6" fill="#ff6fcb" />
+    <circle cx="-76" cy="196" r="2.3" fill="#61f2ff" />
+    <circle cx="-136" cy="145" r="2.7" fill="#c9ff42" />
+    <circle cx="-184" cy="83" r="2.5" fill="#ff66c8" />
+  </g>
+</g>
+
+<g id="particles"></g>
+
+<g id="foreground" class="foreground-veil">
+  <path d="M-40 850 C120 760, 315 748, 480 810 C590 850, 650 900, 650 940 L-40 940 Z"
+    fill="#090618" opacity="0.85" />
+  <path d="M970 940 L970 870 C1040 798, 1190 742, 1370 782 C1490 808, 1605 870, 1660 940 Z"
+    fill="#090618" opacity="0.88" />
+  <path d="M40 840 C180 770, 340 780, 450 840" fill="none" stroke="#a94bff" stroke-opacity="0.34" stroke-width="3" />
+  <path d="M1120 820 C1280 760, 1465 790, 1590 860" fill="none" stroke="#5df5ff" stroke-opacity="0.28" stroke-width="3.2" />
+</g>
+</svg> <script> (function () { const svg = document.querySelector("svg"); const starsGroup = document.getElementById("stars"); const particlesGroup = document.getElementById("particles"); const starData = []; const starCount = 240; for (let i = 0; i < starCount; i++) { const star = document.createElementNS("http://www.w3.org/2000/svg", "circle"); const x = Math.random() * 1600; const y = Math.random() * 900; const r = Math.random() < 0.12 ? 2.2 + Math.random() * 1.3 : 0.6 + Math.random() * 1.4; const opacity = 0.18 + Math.random() * 0.7; const phase = Math.random() * Math.PI * 2; const speed = 0.18 + Math.random() * 0.6; star.setAttribute("cx", x.toFixed(2)); star.setAttribute("cy", y.toFixed(2)); star.setAttribute("r", r.toFixed(2)); star.setAttribute("fill", "#d8f5ff"); star.setAttribute("opacity", opacity.toFixed(3)); if (Math.random() < 0.24) star.setAttribute("class", "twinkle"); starsGroup.appendChild(star); starData.push({ el: star, base: opacity, phase, speed }); } const particleData = []; const particleCount = 140; for (let i = 0; i < particleCount; i++) { const p = document.createElementNS("http://www.w3.org/2000/svg", "circle"); const radiusBand = 150 + Math.random() * 220; const angle = Math.random() * Math.PI * 2; const baseX = 820 + Math.cos(angle) * radiusBand + (Math.random() * 120 - 60); const baseY = 470 + Math.sin(angle) * radiusBand + (Math.random() * 120 - 60); const r = 0.9 + Math.random() * 2.3; const o = 0.2 + Math.random() * 0.7; const hueSet = [ "#75ff58", "#48efff", "#ff57bf", "#d74dff", "#c8ff40", "#60b7ff" ]; const fill = hueSet[(Math.random() * hueSet.length) | 0]; p.setAttribute("cx", baseX.toFixed(2)); p.setAttribute("cy", baseY.toFixed(2)); p.setAttribute("r", r.toFixed(2)); p.setAttribute("fill", fill); p.setAttribute("opacity", o.toFixed(3)); p.setAttribute("filter", "url(#sparkGlow)"); particlesGroup.appendChild(p); particleData.push({ el: p, bx: baseX, by: baseY, ampX: 4 + Math.random() * 13, ampY: 5 + Math.random() * 16, speed: 0.12 + Math.random() * 0.45, phase: Math.random() * Math.PI * 2 }); } const arcSetA = document.getElementById("arcSetA"); const arcSetB = document.getElementById("arcSetB"); const arcSetC = document.getElementById("arcSetC"); const vortexA = document.getElementById("vortexBandsA"); const vortexB = document.getElementById("vortexBandsB"); const mainGlow = document.getElementById("mainGlow"); const sec1 = document.getElementById("secPortal1"); const sec2 = document.getElementById("secPortal2"); const sec3 = document.getElementById("secPortal3"); const pA = document.getElementById("planetAWrap"); const pB = document.getElementById("planetBWrap"); const pSmall = document.getElementById("planetSmallWrap"); const pC = document.getElementById("planetCWrap"); const pD = document.getElementById("planetDWrap"); let t = 0; const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches; function animate() { t += 0.016; if (!reduce) { arcSetA.setAttribute("transform", `rotate(${t * 22})`); arcSetB.setAttribute("transform", `rotate(${-t * 16})`); arcSetC.setAttribute("transform", `rotate(${t * 10})`); vortexA.setAttribute("transform", `rotate(${t * 9}) scale(${1 + Math.sin(t * 1.7) * 0.01})`); vortexB.setAttribute("transform", `rotate(${-t * 6})`); const glowOpacity = 0.58 + Math.sin(t * 1.35) * 0.13; mainGlow.setAttribute("opacity", glowOpacity.toFixed(3)); sec1.setAttribute("transform", `translate(${Math.sin(t * 0.55) * 3}, ${Math.cos(t * 0.8) * 2}) rotate(${t * 8} 480 390)`); sec2.setAttribute("transform", `translate(${Math.sin(t * 0.46) * 2.5}, ${Math.cos(t * 0.65) * 2.2}) rotate(${-t * 9} 1140 332)`); sec3.setAttribute("transform", `translate(${Math.sin(t * 0.6) * 2}, ${Math.cos(t * 0.72) * 2.6}) rotate(${t * 11} 1065 706)`); pA.setAttribute("transform", `translate(0 ${Math.sin(t * 0.42) * 4.6})`); pB.setAttribute("transform", `translate(0 ${Math.cos(t * 0.36) * 3.8})`); pSmall.setAttribute("transform", `translate(0 ${Math.sin(t * 0.67) * 3.2})`); pC.setAttribute("transform", `translate(0 ${Math.cos(t * 0.33) * 5.1})`); pD.setAttribute("transform", `translate(0 ${Math.sin(t * 0.39) * 4.4})`); for (let i = 0; i < particleData.length; i++) { const p = particleData[i]; const nx = p.bx + Math.cos(t * p.speed + p.phase) * p.ampX; const ny = p.by + Math.sin(t * (p.speed + 0.08) + p.phase) * p.ampY; p.el.setAttribute("cx", nx.toFixed(2)); p.el.setAttribute("cy", ny.toFixed(2)); } for (let i = 0; i < starData.length; i++) { if (i % 3 === 0) { const s = starData[i]; const o = s.base + Math.sin(t * s.speed + s.phase) * 0.18; s.el.setAttribute("opacity", Math.max(0.08, Math.min(1, o)).toFixed(3)); } } } requestAnimationFrame(animate); } requestAnimationFrame(animate); function resizeView() { const w = window.innerWidth; const h = window.innerHeight; const ratio = w / h; if (ratio > 2.2) { svg.setAttribute("preserveAspectRatio", "xMidYMid slice"); } else if (ratio < 0.9) { svg.setAttribute("preserveAspectRatio", "xMidYMid slice"); } else { svg.setAttribute("preserveAspectRatio", "xMidYMid slice"); } } window.addEventListener("resize", resizeView, { passive: true }); resizeView(); })(); </script> </body> </html>
