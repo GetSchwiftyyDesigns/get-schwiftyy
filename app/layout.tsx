@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'High-converting websites for brands that are done being boring. Custom builds, conversion-first layouts, AI-ready foundations.',
   metadataBase: new URL('https://www.getschwiftyy.com'),
   verification: {
-    google: 'pxU0fi_g0FQppaycy4j8',
+    google: 'vp_zwu4SMbgXjqW-Fmg1EQMjNNxPc_91PuCa0BaZLNs',
   },
   openGraph: {
     type: 'website',
