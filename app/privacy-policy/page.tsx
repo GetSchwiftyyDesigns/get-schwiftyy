@@ -1,16 +1,15 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { Container } from "@/components/container";
-import { Section } from "@/components/section";
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { Container } from '@/components/container'
+import { Section } from '@/components/section'
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — GetSchwiftyy Design",
-  description: "Privacy Policy for GetSchwiftyy Design. Learn how we collect, use, and protect your information.",
+  title: 'Privacy Policy — GetSchwiftyy Design',
+  description: 'Privacy Policy for GetSchwiftyy Design. Learn how we collect, use, and protect your information.',
   alternates: {
-    canonical: "https://www.getschwiftyy.com/privacy-policy",
+    canonical: 'https://www.getschwiftyy.com/privacy-policy',
   },
-  robots: { index: true, follow: true },
-};
+}
 
 export default function PrivacyPolicyPage() {
   return (
@@ -20,15 +19,12 @@ export default function PrivacyPolicyPage() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
             Legal
           </p>
-          <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="text-4xl font-semibold tracking-tight text-white md:text-6xl">
             Privacy Policy
           </h1>
           <p className="mt-4 text-sm text-slate-400">
-            Effective Date: May 22, 2026 &nbsp;·&nbsp; Website:{" "}
-            <a
-              href="https://www.getschwiftyy.com"
-              className="underline underline-offset-2 hover:text-[#3df2ff]"
-            >
+            Effective Date: May 22, 2026 &nbsp;·&nbsp; Website:{' '}
+            <a href="https://www.getschwiftyy.com" className="underline underline-offset-2 hover:text-[#3df2ff]">
               www.getschwiftyy.com
             </a>
           </p>
@@ -42,18 +38,19 @@ export default function PrivacyPolicyPage() {
             <p className="leading-relaxed">
               At GetSchwiftyy Design, we build websites with personality — but when it comes to your
               privacy, we keep things clear, direct, and respectful. This Privacy Policy explains what
-              information we collect, how we use it, when we may share it, and what choices you have when
-              you visit www.getschwiftyy.com, submit a form, or get in touch about a project.
+              information we collect, how we use it, when we may share it, and what choices you have
+              when you visit www.getschwiftyy.com, submit a form, or get in touch about a project.
             </p>
             <p className="leading-relaxed">
-              By using this website, contacting us, or submitting information through the site, you agree
-              to the practices described below.
+              By using this website, contacting us, or submitting information through the site, you
+              agree to the practices described below.
             </p>
 
             <PolicySection title="What We Collect">
               <p>
-                When you reach out through the site, we may collect the information you choose to send us
-                so we can respond, scope your project, and keep the conversation moving. This may include:
+                When you reach out through the site, we may collect the information you choose to send
+                us so we can respond, scope your project, and keep the conversation moving. This may
+                include:
               </p>
               <ul>
                 <li>Name</li>
@@ -65,8 +62,8 @@ export default function PrivacyPolicyPage() {
                 <li>Any other information you include in a message, inquiry form, or intake form</li>
               </ul>
               <p>
-                We may also automatically collect basic technical and usage data when you browse the site.
-                This may include:
+                We may also automatically collect basic technical and usage data when you browse the
+                site. This may include:
               </p>
               <ul>
                 <li>IP address</li>
@@ -83,14 +80,14 @@ export default function PrivacyPolicyPage() {
 
             <PolicySection title="Cookies and Tracking">
               <p>
-                Like most modern websites, GetSchwiftyy may use cookies and similar technologies to keep
-                the site running smoothly, understand how people use it, and improve performance over time.
-                Depending on the tools connected to the site, that may include analytics cookies, form
-                tracking, or marketing pixels.
+                Like most modern websites, GetSchwiftyy may use cookies and similar technologies to
+                keep the site running smoothly, understand how people use it, and improve performance
+                over time. Depending on the tools connected to the site, that may include analytics
+                cookies, form tracking, or marketing pixels.
               </p>
               <p>
-                You can usually control cookies through your browser settings, though disabling some may
-                affect how parts of the site function.
+                You can usually control cookies through your browser settings, though disabling some
+                may affect how parts of the site function.
               </p>
             </PolicySection>
 
@@ -113,7 +110,7 @@ export default function PrivacyPolicyPage() {
               <p>
                 We do not sell your personal information for money. We may share information only when
                 needed to operate the site, run the business, fulfill services, or work with trusted
-                third-party tools that support those functions. That may include providers for:
+                third-party tools. That may include providers for:
               </p>
               <ul>
                 <li>Website hosting</li>
@@ -134,13 +131,10 @@ export default function PrivacyPolicyPage() {
 
             <PolicySection title="Email and Communications">
               <p>
-                If you reach out to GetSchwiftyy, we may email you back about your inquiry, your project,
-                or related services. If you opt into marketing emails, you can unsubscribe at any time by
-                using the unsubscribe link or emailing{" "}
-                <a
-                  href="mailto:diyon@oxmedia.digital"
-                  className="underline underline-offset-2 hover:text-[#3df2ff]"
-                >
+                If you reach out to GetSchwiftyy, we may email you back about your inquiry, your
+                project, or related services. If you opt into marketing emails, you can unsubscribe at
+                any time by using the unsubscribe link or emailing{' '}
+                <a href="mailto:diyon@oxmedia.digital" className="underline underline-offset-2 hover:text-[#3df2ff]">
                   diyon@oxmedia.digital
                 </a>
                 .
@@ -158,44 +152,41 @@ export default function PrivacyPolicyPage() {
                 compliance, and business operations.
               </p>
               <p>
-                We use reasonable administrative, technical, and organizational safeguards to help protect
-                your information, but no system can guarantee absolute security.
+                We use reasonable administrative, technical, and organizational safeguards to help
+                protect your information, but no system can guarantee absolute security.
               </p>
             </PolicySection>
 
             <PolicySection title="Your Rights">
               <p>
-                Depending on where you live, you may have rights to access, correct, delete, or limit how
-                your personal information is used. Colorado residents may have rights under the Colorado
-                Privacy Act, including rights related to access, correction, deletion, and opting out of
-                certain processing.
+                Depending on where you live, you may have rights to access, correct, delete, or limit
+                how your personal information is used. Colorado residents may have rights under the
+                Colorado Privacy Act, including rights related to access, correction, deletion, and
+                opting out of certain processing.
               </p>
               <p>
-                To make a privacy request, email{" "}
-                <a
-                  href="mailto:diyon@oxmedia.digital"
-                  className="underline underline-offset-2 hover:text-[#3df2ff]"
-                >
+                To make a privacy request, email{' '}
+                <a href="mailto:diyon@oxmedia.digital" className="underline underline-offset-2 hover:text-[#3df2ff]">
                   diyon@oxmedia.digital
-                </a>{" "}
-                with the subject line <strong className="text-white">Privacy Request</strong>. We may need
-                to verify your identity before completing certain requests.
+                </a>{' '}
+                with the subject line <strong className="text-white">Privacy Request</strong>. We may
+                need to verify your identity before completing certain requests.
               </p>
             </PolicySection>
 
             <PolicySection title="Colorado Notice">
               <p>
-                If you are a Colorado resident, you may have rights under applicable Colorado privacy law
-                regarding your personal data. GetSchwiftyy does not knowingly sell personal information
-                for monetary compensation. If you later add ad retargeting, advanced profiling, or other
-                targeted advertising tools, this section should be updated so the policy stays accurate.
+                If you are a Colorado resident, you may have rights under applicable Colorado privacy
+                law regarding your personal data. GetSchwiftyy does not knowingly sell personal
+                information for monetary compensation.
               </p>
             </PolicySection>
 
             <PolicySection title="Other Links">
               <p>
-                This site may link out to third-party websites, tools, or platforms. If you click through
-                to those sites, their privacy practices are governed by their own policies, not this one.
+                This site may link out to third-party websites, tools, or platforms. If you click
+                through to those sites, their privacy practices are governed by their own policies,
+                not this one.
               </p>
             </PolicySection>
 
@@ -219,16 +210,10 @@ export default function PrivacyPolicyPage() {
                 your personal information, contact:
               </p>
               <address className="not-italic leading-relaxed">
-                <strong className="text-white">GetSchwiftyy Design</strong>
-                <br />
-                1050 N Broadway
-                <br />
-                Denver, CO 80203
-                <br />
-                <a
-                  href="mailto:diyon@oxmedia.digital"
-                  className="underline underline-offset-2 hover:text-[#3df2ff]"
-                >
+                <strong className="text-white">GetSchwiftyy Design</strong><br />
+                1050 N Broadway<br />
+                Denver, CO 80203<br />
+                <a href="mailto:diyon@oxmedia.digital" className="underline underline-offset-2 hover:text-[#3df2ff]">
                   diyon@oxmedia.digital
                 </a>
               </address>
@@ -238,16 +223,10 @@ export default function PrivacyPolicyPage() {
         </Container>
       </Section>
     </>
-  );
+  )
 }
 
-function PolicySection({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
+function PolicySection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="space-y-4">
       <h2 className="text-xl font-semibold tracking-tight text-white">{title}</h2>
@@ -255,5 +234,5 @@ function PolicySection({
         {children}
       </div>
     </div>
-  );
+  )
 }
