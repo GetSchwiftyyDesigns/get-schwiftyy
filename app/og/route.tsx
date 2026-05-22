@@ -1,6 +1,8 @@
 import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 export function GET(_req: NextRequest) {
   return new ImageResponse(
     (
