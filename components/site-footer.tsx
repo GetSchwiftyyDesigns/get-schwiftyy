@@ -46,9 +46,17 @@ export function SiteFooter() {
           <p className="text-xs text-neon-green font-mono">
             Built in this dimension with questionable amounts of caffeine.
           </p>
-          <p className="text-xs text-slate-600 font-mono">
-            © {new Date().getFullYear()} getschwiftyy
-          </p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/privacy-policy"
+              className="text-xs text-slate-600 font-mono transition-colors hover:text-[#3df2ff]"
+            >
+              Privacy Policy
+            </Link>
+            <p className="text-xs text-slate-600 font-mono">
+              © {new Date().getFullYear()} getschwiftyy
+            </p>
+          </div>
         </div>
       </Container>
     </footer>
