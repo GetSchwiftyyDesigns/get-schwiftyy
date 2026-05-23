@@ -1,8 +1,54 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@/components/container'
 import { Section } from '@/components/section'
 import { PrimaryButton } from '@/components/primary-button'
 import { Card } from '@/components/card'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.getschwiftyy.com',
+  },
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does getschwiftyy do?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'getschwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages for brands done being boring. Every site is built from scratch — no templates.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is AI web design?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI web design uses artificial intelligence in the build process and in the product itself — enabling dynamic personalization, AI-powered chat, automated content, and conversion optimization baked directly into the website.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does a custom website cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Custom website pricing depends on scope. getschwiftyy offers tiered packages from single landing pages through full multi-page AI-ready builds. Contact us for a project quote.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does it take to build a custom website?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A landing page typically takes 1–2 weeks. A full multi-page website with custom design takes 3–5 weeks depending on content and feedback cycles.',
+      },
+    },
+  ],
+}
 
 // ─── Page data ────────────────────────────────────────────────────────────────
 
@@ -93,6 +139,10 @@ const templateComparison = {
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* ── 1. Hero ─────────────────────────────────────────────────────── */}
       <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 py-24 md:py-32">
         {/* Subtle radial overlay so text pops against the background portal */}
@@ -291,7 +341,31 @@ export default function HomePage() {
       </section>
 
 
-      {/* ── 6. Final CTA Strip ──────────────────────────────────────────── */}
+      {/* ── 6. FAQ ──────────────────────────────────────────────────────── */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <p className="mb-3 font-mono text-xs font-semibold tracking-widest text-neon-green uppercase">
+              FAQ
+            </p>
+            <h2 className="font-heading mb-10 text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Common questions about{' '}
+              <span className="text-gradient-portal">custom web design</span>
+            </h2>
+            <dl className="flex flex-col gap-6">
+              {faqSchema.mainEntity.map((item) => (
+                <div key={item.name} className="card-scifi p-6">
+                  <dt className="font-heading font-semibold text-white mb-2">{item.name}</dt>
+                  <dd className="font-sans text-sm text-slate-300 leading-relaxed">{item.acceptedAnswer.text}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </Container>
+      </section>
+
+
+      {/* ── 7. Final CTA Strip ──────────────────────────────────────────── */}
       <section className="relative overflow-hidden py-24 md:py-32">
         {/* Portal glow behind CTA */}
         <div

@@ -5,9 +5,12 @@ import { PrimaryButton } from '@/components/primary-button'
 import { Card } from '@/components/card'
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Web Design & Development Services | Custom Sites + AI Builds',
   description:
-    'Pick your level of Schwiftyy. Custom websites and landing pages built to convert.',
+    'Custom website design, landing page development, and AI-ready web builds. Pick your level — every package is conversion-first, built from scratch around your brand.',
+  alternates: {
+    canonical: 'https://www.getschwiftyy.com/services',
+  },
 }
 
 const packages = [

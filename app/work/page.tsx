@@ -5,9 +5,12 @@ import { PrimaryButton } from '@/components/primary-button'
 import { WorkGrid } from '@/components/work-grid'
 
 export const metadata: Metadata = {
-  title: 'Work',
+  title: 'Web Design Portfolio | Case Studies & Client Sites',
   description:
-    'Some of the universes opened for brands who were done looking like everyone else.',
+    'Custom websites and landing pages built by getschwiftyy. Real web design projects for brands across e-commerce, services, and SaaS — all conversion-focused, none templated.',
+  alternates: {
+    canonical: 'https://www.getschwiftyy.com/work',
+  },
 }
 
 const processBullets = [

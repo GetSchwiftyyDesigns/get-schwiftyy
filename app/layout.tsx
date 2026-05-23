@@ -20,38 +20,100 @@ const spaceGrotesk = Space_Grotesk({
   weight: ['300', '400', '500', '600', '700'],
 })
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.getschwiftyy.com/#organization',
+      name: 'getschwiftyy',
+      alternateName: 'Get Schwiftyy',
+      url: 'https://www.getschwiftyy.com',
+      description:
+        'AI-powered web design agency building custom, high-converting websites for brands done being boring.',
+      foundingDate: '2024',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        email: 'hello@getschwiftyy.com',
+        url: 'https://www.getschwiftyy.com/contact',
+        availableLanguage: ['English'],
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.getschwiftyy.com/#website',
+      url: 'https://www.getschwiftyy.com',
+      name: 'getschwiftyy',
+      description: 'AI web design agency — custom websites that convert.',
+      publisher: { '@id': 'https://www.getschwiftyy.com/#organization' },
+      inLanguage: 'en-US',
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': 'https://www.getschwiftyy.com/#service-org',
+      name: 'getschwiftyy — AI Web Design Agency',
+      url: 'https://www.getschwiftyy.com',
+      description:
+        'Custom AI-powered web design and website development for brands that want to convert.',
+      areaServed: { '@type': 'Country', name: 'United States' },
+      serviceType: [
+        'Web Design',
+        'Website Development',
+        'AI Web Design',
+        'Landing Page Design',
+        'Custom Website Development',
+      ],
+      parentOrganization: { '@id': 'https://www.getschwiftyy.com/#organization' },
+    },
+  ],
+}
+
 export const metadata: Metadata = {
   title: {
-    default: 'getschwiftyy: Stupidly good-looking websites',
+    default: 'AI Web Design Agency | Custom Websites That Convert — getschwiftyy',
     template: '%s | getschwiftyy',
   },
   description:
-    'High-converting websites for brands that are done being boring. Custom builds, conversion-first layouts, AI-ready foundations.',
+    'getschwiftyy is an AI-powered web design agency building custom, high-converting websites. Custom website development, landing pages, and AI-ready foundations for brands done being boring.',
   metadataBase: new URL('https://www.getschwiftyy.com'),
   verification: {
     google: 'vp_zwu4SMbgXjqW-Fmg1EQMjNNxPc_91PuCa0BaZLNs',
+    other: {
+      'msvalidate.01': 'E9A0D26124A26CC00E51E9F0DBD2D2C8',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.getschwiftyy.com',
     siteName: 'getschwiftyy',
-    title: 'getschwiftyy: Stupidly good-looking websites',
+    title: 'AI Web Design Agency | Custom Websites That Convert — getschwiftyy',
     description:
-      'High-converting websites for brands that are done being boring.',
+      'Custom AI-powered websites built to convert. getschwiftyy builds high-quality custom websites for brands done being boring.',
     images: [
       {
         url: '/og',
         width: 1200,
         height: 630,
-        alt: 'getschwiftyy — Stupidly good-looking websites',
+        alt: 'getschwiftyy — AI Web Design Agency',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'getschwiftyy',
-    description: 'High-converting websites for brands that are done being boring.',
+    title: 'getschwiftyy | AI Web Design Agency',
+    description: 'Custom AI-powered websites built to convert for brands done being boring.',
     images: ['/og'],
   },
 }
@@ -63,6 +125,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${archivo.variable} ${spaceGrotesk.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-[#070314] text-white antialiased">
         <div className="relative min-h-screen overflow-x-clip">
           {/* Desktop background — hidden on mobile */}

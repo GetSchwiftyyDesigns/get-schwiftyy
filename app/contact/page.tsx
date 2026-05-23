@@ -4,9 +4,12 @@ import { Section } from '@/components/section'
 import { ContactForm } from '@/components/contact-form'
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Hire a Web Design Agency | Start Your Custom Website Project',
   description:
-    'Tell me what you\'re building and how weird you want to get. Get a quote or book a call.',
+    'Ready for a custom website that actually converts? Tell us what you\'re building. getschwiftyy is an AI-powered web design agency taking new projects.',
+  alternates: {
+    canonical: 'https://www.getschwiftyy.com/contact',
+  },
 }
 
 export default function ContactPage() {
