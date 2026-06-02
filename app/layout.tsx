@@ -26,8 +26,8 @@ const jsonLd = {
     {
       '@type': 'Organization',
       '@id': 'https://www.getschwiftyy.com/#organization',
-      name: 'getschwiftyy',
-      alternateName: 'Get Schwiftyy',
+      name: 'GetSchwiftyy',
+      alternateName: 'GetSchwiftyy',
       url: 'https://www.getschwiftyy.com',
       logo: {
         '@type': 'ImageObject',
@@ -37,7 +37,7 @@ const jsonLd = {
       },
       description:
         'getschwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages for brands done being boring. Every site is built from scratch — no templates.',
-      foundingDate: '2024',
+      foundingDate: '2025',
       founder: {
         '@type': 'Person',
         name: 'Diyon Clark',
