@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@/components/container'
 import { Section } from '@/components/section'
@@ -20,7 +20,7 @@ const faqSchema = {
       name: 'What does getschwiftyy do?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'getschwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages for brands done being boring. Every site is built from scratch — no templates.',
+        text: 'getschwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages for brands done being boring. Every site is built from scratch - no templates.',
       },
     },
     {
@@ -28,7 +28,7 @@ const faqSchema = {
       name: 'What is AI web design?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AI web design uses artificial intelligence in the build process and in the product itself — enabling dynamic personalization, AI-powered chat, automated content, and conversion optimization baked directly into the website.',
+        text: 'AI web design uses artificial intelligence in the build process and in the product itself - enabling dynamic personalization, AI-powered chat, automated content, and conversion optimization baked directly into the website.',
       },
     },
     {
@@ -161,7 +161,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mx-auto mb-10 max-w-xl text-lg leading-7 text-slate-300 md:text-xl">
-            GetSchwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages from scratch — no templates, no cookie-cutter layouts. Full sites ship in 3–5 weeks depending on complexity, landing pages in 1–2. Every build is conversion-first, brand-specific, and built to actually do the job.
+            GetSchwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages from scratch - no templates, no cookie-cutter layouts. Full sites ship in 3–5 weeks depending on complexity, landing pages in 1–2. Every build is conversion-first, brand-specific, and built to actually do the job.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5">

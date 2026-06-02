@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@/components/container'
 import { Section } from '@/components/section'
@@ -48,7 +48,7 @@ const articleSchema = {
             name: 'What is the difference between a custom website and a template?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A custom website is designed and built from scratch around your specific brand, audience, and conversion goals — every layout decision, color, component, and content structure is unique to you. A template is a pre-built design framework used by thousands of other sites, modified with your logo and colors. Templates are faster and cheaper upfront but compromise on brand differentiation, conversion optimization, and technical flexibility.',
+              text: 'A custom website is designed and built from scratch around your specific brand, audience, and conversion goals - every layout decision, color, component, and content structure is unique to you. A template is a pre-built design framework used by thousands of other sites, modified with your logo and colors. Templates are faster and cheaper upfront but compromise on brand differentiation, conversion optimization, and technical flexibility.',
             },
           },
           {
@@ -64,7 +64,7 @@ const articleSchema = {
             name: 'How long does a custom website take vs a template?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A custom GetSchwiftyy full site takes 3–5 weeks depending on complexity. A landing page takes 1–2 weeks. Template-based sites can launch in days but typically require significant time fighting the template to match your brand — time that compounds into technical debt over months.',
+              text: 'A custom GetSchwiftyy full site takes 3–5 weeks depending on complexity. A landing page takes 1–2 weeks. Template-based sites can launch in days but typically require significant time fighting the template to match your brand - time that compounds into technical debt over months.',
             },
           },
           {
@@ -72,7 +72,7 @@ const articleSchema = {
             name: "Why doesn't GetSchwiftyy use templates?",
             acceptedAnswer: {
               '@type': 'Answer',
-              text: "GetSchwiftyy doesn't use templates because templates are built for the average brand, and the average brand converts at average rates. Every design decision — layout hierarchy, spacing, animation, CTA placement — should be made for your specific audience and goal, not borrowed from a layout that was already optimized for someone else's product.",
+              text: "GetSchwiftyy doesn't use templates because templates are built for the average brand, and the average brand converts at average rates. Every design decision - layout hierarchy, spacing, animation, CTA placement - should be made for your specific audience and goal, not borrowed from a layout that was already optimized for someone else's product.",
             },
           },
           {
@@ -80,7 +80,7 @@ const articleSchema = {
             name: 'How much does a custom website cost at GetSchwiftyy?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: "GetSchwiftyy pricing is scoped to each project — there's no fixed price list because scope varies significantly. Every engagement starts with a discovery call and design scope session before cost is confirmed. An optional monthly maintenance retainer is available after launch.",
+              text: "GetSchwiftyy pricing is scoped to each project - there's no fixed price list because scope varies significantly. Every engagement starts with a discovery call and design scope session before cost is confirmed. An optional monthly maintenance retainer is available after launch.",
             },
           },
         ],
@@ -100,7 +100,7 @@ const comparison = [
   {
     factor: 'Brand differentiation',
     template: 'Looks like thousands of other sites using the same framework',
-    custom: 'Designed around your specific brand — zero shared visual DNA',
+    custom: 'Designed around your specific brand - zero shared visual DNA',
   },
   {
     factor: 'Conversion optimization',
@@ -114,8 +114,8 @@ const comparison = [
   },
   {
     factor: 'Technical flexibility',
-    template: 'Limited by what the template builder supports — workarounds stack up',
-    custom: 'Full control — automation, CRM integration, AI workflows, custom logic',
+    template: 'Limited by what the template builder supports - workarounds stack up',
+    custom: 'Full control - automation, CRM integration, AI workflows, custom logic',
   },
   {
     factor: 'Backend & security',
@@ -124,13 +124,13 @@ const comparison = [
   },
   {
     factor: 'Timeline',
-    template: 'Launch in days — then spend weeks fighting the template to fit your brand',
+    template: 'Launch in days - then spend weeks fighting the template to fit your brand',
     custom: 'GetSchwiftyy full sites in 3–5 weeks, landing pages in 1–2 weeks',
   },
   {
     factor: 'Long-term cost',
     template: 'Monthly platform fees + dev time fighting limitations that compound over time',
-    custom: 'Higher upfront, lower ongoing — you own the code, no platform lock-in',
+    custom: 'Higher upfront, lower ongoing - you own the code, no platform lock-in',
   },
 ]
 
@@ -142,7 +142,7 @@ const whenTemplateIsOk = [
 ]
 
 const whenYouNeedCustom = [
-  'Your brand needs to be remembered — not recognized as a Webflow/Squarespace site',
+  'Your brand needs to be remembered - not recognized as a Webflow/Squarespace site',
   'Conversion rate is a real business metric you track and optimize',
   'You need automation, CRM integration, or custom backend logic',
   'You want GEO/AEO optimization so AI engines actually recommend you',
@@ -153,23 +153,23 @@ const whenYouNeedCustom = [
 const faqs = [
   {
     q: 'What is the difference between a custom website and a template?',
-    a: "A custom website is designed from scratch — every layout, component, and content decision made for your specific brand, audience, and goal. A template is a pre-built design framework used by thousands of sites, modified with your logo and colors. The visual surface can look similar. What's underneath is completely different.",
+    a: "A custom website is designed from scratch - every layout, component, and content decision made for your specific brand, audience, and goal. A template is a pre-built design framework used by thousands of sites, modified with your logo and colors. The visual surface can look similar. What's underneath is completely different.",
   },
   {
     q: 'Are custom websites actually worth it?',
-    a: "When conversion rate matters, when your brand needs to stand out, and when you need technical capabilities templates can't deliver — yes, definitively. GetSchwiftyy builds include GEO/AEO optimization, backend automation, and conversion-first architecture that no template builder supports out of the box.",
+    a: "When conversion rate matters, when your brand needs to stand out, and when you need technical capabilities templates can't deliver - yes, definitively. GetSchwiftyy builds include GEO/AEO optimization, backend automation, and conversion-first architecture that no template builder supports out of the box.",
   },
   {
     q: 'How long does a custom site take vs a template?',
-    a: 'GetSchwiftyy full sites take 3–5 weeks. Landing pages take 1–2 weeks. Templates can launch in days — but most clients who come to us from templates spent months fighting the builder to get the brand right. That time has a cost too.',
+    a: 'GetSchwiftyy full sites take 3–5 weeks. Landing pages take 1–2 weeks. Templates can launch in days - but most clients who come to us from templates spent months fighting the builder to get the brand right. That time has a cost too.',
   },
   {
     q: "Why doesn't GetSchwiftyy use templates?",
-    a: "Because templates are designed for the average brand, and the average brand converts at average rates. Every GetSchwiftyy site is built around your specific audience, your conversion goal, and your visual identity — not borrowed from a framework that was already optimized for someone else.",
+    a: "Because templates are designed for the average brand, and the average brand converts at average rates. Every GetSchwiftyy site is built around your specific audience, your conversion goal, and your visual identity - not borrowed from a framework that was already optimized for someone else.",
   },
   {
     q: 'How much does a custom GetSchwiftyy site cost?',
-    a: "Pricing is scoped to the project — every engagement starts with a discovery call and design scope session before any cost is confirmed. There's no fixed price list because full sites and landing pages vary significantly in scope and complexity.",
+    a: "Pricing is scoped to the project - every engagement starts with a discovery call and design scope session before any cost is confirmed. There's no fixed price list because full sites and landing pages vary significantly in scope and complexity.",
   },
 ]
 
@@ -192,9 +192,9 @@ export default function CustomVsTemplatePage() {
               Custom Website vs Template
             </h1>
             <p className="font-sans mb-8 text-xl text-white leading-relaxed">
-              A custom website is designed from scratch around your specific brand, audience, and conversion goals — every layout, component, and content decision is unique to you. A template is a pre-built framework used by thousands of other sites, repainted to look like you. The difference shows in conversion rates, SEO performance, and how your brand is perceived from the first click.
+              A custom website is designed from scratch around your specific brand, audience, and conversion goals - every layout, component, and content decision is unique to you. A template is a pre-built framework used by thousands of other sites, repainted to look like you. The difference shows in conversion rates, SEO performance, and how your brand is perceived from the first click.
             </p>
-            <PrimaryButton href="/contact">Build custom — start here</PrimaryButton>
+            <PrimaryButton href="/contact">Build custom - start here</PrimaryButton>
           </div>
         </Container>
       </Section>
@@ -243,7 +243,7 @@ export default function CustomVsTemplatePage() {
             Honest Advice
           </p>
           <h2 className="font-heading mb-10 text-3xl font-bold tracking-tight text-white md:text-4xl">
-            When a template is fine — and when it&apos;s not
+            When a template is fine - and when it&apos;s not
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
             <Card className="flex flex-col">
