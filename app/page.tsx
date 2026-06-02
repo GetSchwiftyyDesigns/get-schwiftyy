@@ -161,7 +161,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mx-auto mb-10 max-w-xl text-lg leading-7 text-slate-300 md:text-xl">
-            I build stupidly good-looking, high-converting websites for brands that are done being boring.
+            GetSchwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages from scratch — no templates, no cookie-cutter layouts. Full sites ship in 3–5 weeks depending on complexity, landing pages in 1–2. Every build is conversion-first, brand-specific, and built to actually do the job.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5">
