@@ -28,5 +28,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.7,
     },
+    {
+      url: `${BASE_URL}/what-is-ai-web-design`,
+      lastModified: new Date('2026-06-02'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/custom-website-vs-template`,
+      lastModified: new Date('2026-06-02'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ]
 }
