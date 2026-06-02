@@ -29,15 +29,34 @@ const jsonLd = {
       name: 'getschwiftyy',
       alternateName: 'Get Schwiftyy',
       url: 'https://www.getschwiftyy.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.getschwiftyy.com/icon.png',
+        width: 512,
+        height: 512,
+      },
       description:
-        'AI-powered web design agency building custom, high-converting websites for brands done being boring.',
+        'getschwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages for brands done being boring. Every site is built from scratch — no templates.',
       foundingDate: '2024',
+      founder: {
+        '@type': 'Person',
+        name: 'Diyon Clark',
+        jobTitle: 'Founder',
+        url: 'https://www.linkedin.com/in/diyon-clark',
+        sameAs: ['https://www.linkedin.com/in/diyon-clark'],
+      },
+      sameAs: [
+        'https://www.instagram.com/getschwiftyy',
+        'https://x.com/getschwiftyy',
+        'https://www.linkedin.com/company/getschwiftyy',
+      ],
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
         email: 'hello@getschwiftyy.com',
         url: 'https://www.getschwiftyy.com/contact',
         availableLanguage: ['English'],
+        areaServed: 'US',
       },
     },
     {
@@ -86,11 +105,15 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+    'max-video-preview': -1,
     googleBot: {
       index: true,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
+      'max-video-preview': -1,
     },
   },
   openGraph: {
