@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     'getschwiftyy is an AI-powered web design agency building custom, high-converting websites. Custom website development, landing pages, and AI-ready foundations for brands done being boring.',
   metadataBase: new URL('https://www.getschwiftyy.com'),
   verification: {
-    google: 'vp_zwu4SMbgXjqW-Fmg1EQMjNNxPc_91PuCa0BaZLNs',
+    google: ['vp_zwu4SMbgXjqW-Fmg1EQMjNNxPc_91PuCa0BaZLNs', 'pxU0fi_g0FQppaycy4j81cBLzueYarr852z-D46CpRo'],
     other: {
       'msvalidate.01': 'E9A0D26124A26CC00E51E9F0DBD2D2C8',
     },
