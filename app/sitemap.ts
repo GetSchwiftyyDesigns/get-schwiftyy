@@ -40,5 +40,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${BASE_URL}/denver-web-design`,
+      lastModified: new Date('2026-10-01'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/web-design-for-therapists`,
+      lastModified: new Date('2026-10-01'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/web-design-for-cannabis-dispensaries`,
+      lastModified: new Date('2026-10-01'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
   ]
 }

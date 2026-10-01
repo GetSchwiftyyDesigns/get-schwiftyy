@@ -12,28 +12,28 @@ export interface WorkProject {
 
 export const workProjects: WorkProject[] = [
   {
-    id: 'oxmedia',
+    id: 'forcepeptidesonline',
     tag: 'Full Site',
-    title: 'Ox Media Digital',
-    subtitle: 'AI-powered e-commerce tools',
-    description: 'Brand site for an AI Amazon listing optimization platform.',
+    title: 'FORCE Peptides Online',
+    subtitle: 'Peptide research e-commerce',
+    description: 'Full e-commerce brand site for a peptide research supplier.',
     details:
-      'Full marketing site for Ox Media Digital, an AI-powered platform that helps e-commerce sellers write optimized Amazon listings at scale. Includes a dark glassmorphism design system, animated hero, service cards, and integrated contact flow.',
-    year: '2024',
-    status: 'live',
-    url: 'https://oxmedia.digital',
-  },
-  {
-    id: 'softritualsdigital',
-    tag: 'Full Site',
-    title: 'Soft Rituals Digital',
-    subtitle: 'Interior design studio',
-    description: 'Clean, Rich Girl Financial Freedom Aesthetic.',
-    details:
-      'Five-page marketing site for a boutique interior design studio. Built with a Sunset Harmony design system: warm creams, copper tones, and soft navy. Features animated scroll reveals, a fluid particle canvas, and Netlify Forms integration.',
+      'Full marketing and e-commerce site for FORCE Peptides Online, a research peptide supplier. Includes a dark, high-trust design system, product catalog, compliance-ready content structure, and integrated contact flow.',
     year: '2025',
     status: 'live',
-    url: 'https://softritualsdigital.com',
+    url: 'https://www.forcepeptidesonline.com',
+  },
+  {
+    id: 'ibattleme',
+    tag: 'Full Site',
+    title: 'I Battle Me Daily',
+    subtitle: 'Personal growth storefront',
+    description: 'Custom storefront site for a personal-growth and self-accountability brand.',
+    details:
+      'Full multi-page site and storefront for I Battle Me Daily, a personal-growth brand built around daily self-accountability. Custom Next.js build with a bold, motivational design system and integrated storefront flow.',
+    year: '2025',
+    status: 'live',
+    url: 'https://www.ibattleme.com',
   },
   {
     id: 'force-gum',

@@ -36,8 +36,18 @@ const jsonLd = {
         height: 512,
       },
       description:
-        'getschwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages for brands done being boring. Every site is built from scratch — no templates.',
+        'getschwiftyy is a Denver, Colorado custom web design agency that builds high-converting websites and landing pages for brands done being boring — including therapy practices and cannabis dispensaries. Every site is built from scratch — no templates.',
       foundingDate: '2025',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Denver',
+        addressRegion: 'CO',
+        addressCountry: 'US',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Denver' },
+        { '@type': 'State', name: 'Colorado' },
+      ],
       founder: {
         '@type': 'Person',
         name: 'Diyon Clark',
@@ -64,24 +74,36 @@ const jsonLd = {
       '@id': 'https://www.getschwiftyy.com/#website',
       url: 'https://www.getschwiftyy.com',
       name: 'getschwiftyy',
-      description: 'AI web design agency — custom websites that convert.',
+      description: 'Denver custom web design agency — custom websites that convert.',
       publisher: { '@id': 'https://www.getschwiftyy.com/#organization' },
       inLanguage: 'en-US',
     },
     {
       '@type': 'ProfessionalService',
       '@id': 'https://www.getschwiftyy.com/#service-org',
-      name: 'getschwiftyy — AI Web Design Agency',
+      name: 'getschwiftyy — Denver Custom Web Design Agency',
       url: 'https://www.getschwiftyy.com',
       description:
-        'Custom AI-powered web design and website development for brands that want to convert.',
-      areaServed: { '@type': 'Country', name: 'United States' },
+        'Custom website design and development for Denver businesses, therapy practices, and cannabis dispensaries that want to convert.',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Denver',
+        addressRegion: 'CO',
+        addressCountry: 'US',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Denver' },
+        { '@type': 'State', name: 'Colorado' },
+        { '@type': 'Country', name: 'United States' },
+      ],
       serviceType: [
         'Web Design',
         'Website Development',
-        'AI Web Design',
-        'Landing Page Design',
+        'Denver Web Design',
         'Custom Website Development',
+        'Landing Page Design',
+        'Therapist Website Design',
+        'Cannabis Dispensary Website Design',
       ],
       parentOrganization: { '@id': 'https://www.getschwiftyy.com/#organization' },
     },
@@ -90,11 +112,11 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'AI Web Design Agency | Custom Websites That Convert — getschwiftyy',
+    default: 'Denver Custom Website Design & Development Agency | getschwiftyy',
     template: '%s | getschwiftyy',
   },
   description:
-    'getschwiftyy is an AI-powered web design agency building custom, high-converting websites. Custom website development, landing pages, and AI-ready foundations for brands done being boring.',
+    'getschwiftyy is a Denver-based custom website design and development agency building high-converting websites for therapy practices, cannabis dispensaries, e-commerce brands, and service businesses. No templates, ever.',
   metadataBase: new URL('https://www.getschwiftyy.com'),
   verification: {
     google: ['vp_zwu4SMbgXjqW-Fmg1EQMjNNxPc_91PuCa0BaZLNs', 'pxU0fi_g0FQppaycy4j81cBLzueYarr852z-D46CpRo'],
@@ -121,22 +143,22 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://www.getschwiftyy.com',
     siteName: 'getschwiftyy',
-    title: 'AI Web Design Agency | Custom Websites That Convert — getschwiftyy',
+    title: 'Denver Custom Website Design & Development Agency | getschwiftyy',
     description:
-      'Custom AI-powered websites built to convert. getschwiftyy builds high-quality custom websites for brands done being boring.',
+      'Custom websites built to convert for Denver businesses, therapy practices, and cannabis dispensaries. No templates, ever.',
     images: [
       {
         url: '/og',
         width: 1200,
         height: 630,
-        alt: 'getschwiftyy — AI Web Design Agency',
+        alt: 'getschwiftyy — Denver Custom Web Design Agency',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'getschwiftyy | AI Web Design Agency',
-    description: 'Custom AI-powered websites built to convert for brands done being boring.',
+    title: 'getschwiftyy | Denver Custom Web Design Agency',
+    description: 'Custom websites built to convert for Denver businesses, therapy practices, and cannabis dispensaries.',
     images: ['/og'],
   },
 }

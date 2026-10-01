@@ -8,6 +8,12 @@ const footerLinks = [
   { href: '/contact', label: 'Open a Channel' },
 ]
 
+const industryLinks = [
+  { href: '/denver-web-design', label: 'Denver Web Design' },
+  { href: '/web-design-for-therapists', label: 'Websites for Therapists' },
+  { href: '/web-design-for-cannabis-dispensaries', label: 'Websites for Dispensaries' },
+]
+
 export function SiteFooter() {
   return (
     <footer className="relative border-t border-[rgba(143,75,255,0.2)] bg-[rgba(7,3,20,0.7)] backdrop-blur-md md:backdrop-blur-xl py-12 overflow-hidden">
@@ -24,11 +30,27 @@ export function SiteFooter() {
             <p className="max-w-md text-sm text-white leading-relaxed font-body">
               Stupidly good-looking, high-converting websites for brands that are done being boring.
             </p>
+            <p className="text-sm text-slate-400 font-body">Denver, Colorado</p>
           </div>
 
           <nav aria-label="Footer navigation">
             <ul className="flex flex-wrap gap-6">
               {footerLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-300 transition-colors hover:text-[#3df2ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#8f4bff] focus-visible:outline-offset-2 rounded cursor-pointer"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Industries we build for">
+            <ul className="flex flex-wrap gap-6">
+              {industryLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

@@ -6,6 +6,9 @@ import { PrimaryButton } from '@/components/primary-button'
 import { Card } from '@/components/card'
 
 export const metadata: Metadata = {
+  title: 'Denver Custom Website Design & Development Agency | getschwiftyy',
+  description:
+    'getschwiftyy is a Denver-based custom website design and development agency. We build high-converting sites for therapy practices, cannabis dispensaries, e-commerce brands, and service businesses — no templates, ever.',
   alternates: {
     canonical: 'https://www.getschwiftyy.com',
   },
@@ -45,6 +48,14 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'A landing page typically takes 1–2 weeks. A full multi-page website with custom design takes 3–5 weeks depending on content and feedback cycles.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does getschwiftyy build websites for Denver therapy practices and cannabis dispensaries?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. getschwiftyy is based in Denver, Colorado and builds custom websites for local therapy and counseling practices (HIPAA-aware contact forms, scheduling-ready layouts) and cannabis dispensaries (Colorado-compliant copy and structure, no mass-market ad restrictions to work around). Every build is custom — no shared templates.',
       },
     },
   ],
@@ -90,17 +101,17 @@ const services = [
 
 const featuredWork = [
   {
-    id: 'oxmedia',
+    id: 'forcepeptidesonline',
     tag: 'Full Site',
-    title: 'Ox Media Digital',
-    description: 'AI-powered e-commerce brand site.',
+    title: 'FORCE Peptides Online',
+    description: 'Full e-commerce brand site for a peptide research supplier.',
     color: 'green',
   },
   {
-    id: 'bylostudio',
+    id: 'ibattleme',
     tag: 'Full Site',
-    title: 'Soft Rituals Digital',
-    description: 'Clean, Rich Girl Financial Freedom Aesthetic.',
+    title: 'I Battle Me Daily',
+    description: 'Custom storefront for a personal-growth and self-accountability brand.',
     color: 'purple',
   },
   {
@@ -151,17 +162,17 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           {/* HUD badge */}
           <div className="mb-6 inline-block rounded-full border border-[rgba(61,242,255,0.3)] bg-[rgba(61,242,255,0.06)] px-4 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-[#3df2ff] backdrop-blur-sm">
-            Portal Active
+            Denver, CO · Portal Active
           </div>
 
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-7xl lg:text-8xl">
             Get{' '}
             <span className="text-gradient-portal">Schwiftyy</span>
-            <br />With Your Website
+            <br />With Your Denver Website
           </h1>
 
           <p className="mx-auto mb-10 max-w-xl text-lg leading-7 text-slate-300 md:text-xl">
-            GetSchwiftyy is an AI-powered web design agency that builds custom, high-converting websites and landing pages from scratch - no templates, no cookie-cutter layouts. Full sites ship in 3–5 weeks depending on complexity, landing pages in 1–2. Every build is conversion-first, brand-specific, and built to actually do the job.
+            GetSchwiftyy is a Denver-based custom website design and development agency. We build high-converting websites and landing pages from scratch for Denver therapy practices, cannabis dispensaries, e-commerce brands, and service businesses - no templates, no cookie-cutter layouts. Full sites ship in 3–5 weeks, landing pages in 1–2. Every build is conversion-first, brand-specific, and built to actually do the job.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5">
@@ -214,6 +225,54 @@ export default function HomePage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </Container>
+      </section>
+
+
+      {/* ── 2.5 Who I Build For (Denver niches) ───────────────────────────── */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <Container>
+          <div className="mb-12">
+            <p className="mb-3 font-mono text-xs font-semibold tracking-widest text-[#3df2ff] uppercase">
+              Who I Build For
+            </p>
+            <h2 className="font-heading mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Denver businesses that are tired of{' '}
+              <span className="text-gradient-portal">invisible online.</span>
+            </h2>
+            <p className="max-w-2xl font-sans text-lg text-white leading-relaxed">
+              Every industry has its own version of &quot;done right.&quot; Here&apos;s where I focus in Denver.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            <Link href="/web-design-for-therapists" className="block">
+              <Card glow="green" className="flex h-full flex-col gap-3">
+                <h3 className="font-heading text-lg font-semibold text-white">Therapy &amp; Counseling Practices</h3>
+                <p className="font-sans text-sm text-white leading-relaxed">
+                  HIPAA-aware contact forms, scheduling-ready layouts, and SEO built for &quot;therapist near me&quot; searches.
+                </p>
+                <span className="mt-auto font-mono text-xs text-neon-green">Learn more →</span>
+              </Card>
+            </Link>
+            <Link href="/web-design-for-cannabis-dispensaries" className="block">
+              <Card glow="green" className="flex h-full flex-col gap-3">
+                <h3 className="font-heading text-lg font-semibold text-white">Cannabis Dispensaries</h3>
+                <p className="font-sans text-sm text-white leading-relaxed">
+                  Colorado-compliant copy and structure - a website is one of the few channels dispensaries can fully own.
+                </p>
+                <span className="mt-auto font-mono text-xs text-neon-green">Learn more →</span>
+              </Card>
+            </Link>
+            <Link href="/denver-web-design" className="block">
+              <Card glow="green" className="flex h-full flex-col gap-3">
+                <h3 className="font-heading text-lg font-semibold text-white">Denver Businesses, Generally</h3>
+                <p className="font-sans text-sm text-white leading-relaxed">
+                  E-commerce brands, service firms, and creative studios across Denver that want a site built to convert.
+                </p>
+                <span className="mt-auto font-mono text-xs text-neon-green">Learn more →</span>
+              </Card>
+            </Link>
           </div>
         </Container>
       </section>
